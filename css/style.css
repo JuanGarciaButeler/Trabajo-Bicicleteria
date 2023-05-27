@@ -54,7 +54,6 @@ header img {
   height: 70px;
   width: auto;
 }
-
 /*Index*/
 a {
   text-decoration: none;
@@ -153,6 +152,10 @@ h1 {
 
 .headerMobile {
   display: none;
+}
+
+html{
+  overflow-x: hidden;
 }
 
 /*Accesorios y Bicicletas*/
