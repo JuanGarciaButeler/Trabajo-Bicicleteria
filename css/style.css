@@ -170,8 +170,12 @@ html{
   top: 10px;
 }
 .tienda .checkBox p {
-  text-align: center;
-  margin: 60px;
+  text-align: left;
+  margin: 30px;
+}
+.tienda .checkBox input{
+  align-items: center;
+  margin: 15px;
 }
 .tienda .tiendaProductos {
   width: 100%;
