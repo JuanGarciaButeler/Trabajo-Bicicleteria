@@ -168,10 +168,13 @@ html{
   width: 25%;
   position: sticky;
   top: 10px;
+  background-color: darkgray;
+  border-radius: 25px;
 }
 .tienda .checkBox p {
   text-align: left;
   margin: 30px;
+  text-align: center;
 }
 .tienda .checkBox input{
   align-items: center;
@@ -184,11 +187,22 @@ html{
   justify-content: left;
 }
 .tienda .tiendaProductos img {
-  margin: 25px;
+  margin: 25px; 
 }
 .tienda .tiendaProductos p {
   text-align: left;
   margin: 10px;
+}
+.tiendaProductos .TiendaBicis{
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px;
+}
+.tiendaProductos .TiendaAccesorios{
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px;
+
 }
 
 /*Galeria*/
@@ -374,6 +388,7 @@ footer .contactoFooter {
   }
 
   /* Galeria*/
+
   .container .gal1 {
     height: 38vh;
     align-self: center;
@@ -381,7 +396,7 @@ footer .contactoFooter {
   }
   .container .gal2 {
     height: 19vh;
-    width: 19vh;
+    width: 16vh;
   }
   .container .gal3 {
     width: 40vh;
@@ -406,6 +421,21 @@ footer .contactoFooter {
     width: 40vh;
     height: auto;
     margin: 10px 0 10px 0;
+  }
+  .gal9{
+    width: 17vh;
+  }
+  .colRey{
+    width: min-content;
+  }
+  .container .rey{
+    width: min-content;
+  }
+  .col{
+    width: min-content;
+  }
+  .col .rey{
+    width: min-content;
   }
   
   /* Footer*/

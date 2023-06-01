@@ -1,5 +1,7 @@
 @import "./base/vars";
 @import "./base/listas";
+@import "./base/maps";
+
 @import "./componentes/header";
 @import "./componentes/footer";
 
@@ -75,6 +77,12 @@ h1{
             text-align: left;
             margin: 10px;
         }
+        .TiendaBicis{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
     }
 }
 
