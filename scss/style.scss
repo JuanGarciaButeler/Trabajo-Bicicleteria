@@ -1,61 +1,8 @@
-header{
-    background-color: #202020;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10%;
-    width: 100%;
-    .div{
-        transition: 0.2s;
-    }
-    .logo-desktop{
-        height: 70px;
-       width: auto;
-    }
-    .nav-links{
-        li{
-            display: inline-block;
-            margin-top: 15px;
-            padding: 0 20px;
-            list-style: none;
-        } 
-         a{
-            transition: 0.2s;
-            border-bottom: 1px solid transparent;
-        }     
-    }
-    .buscador{
-        display: flex;
-        align-items:center;
-        width: auto;
-            button{
-                background-color:#00da45da;
-                color: rgb(0, 0, 0);
-                width: 80px;
-                border: none;
-                height: 38px;
-            }    
-            input{
-                height: 40px;
-                width: 250px;
-                border: none;
-                background-color: #303030;
-                border: 1px solid #000000;
-                padding-left: 15px;
-            }
-    }
-    .div:hover{
-        transform:scale(1.1)
-    }
-    .nav-links li a:hover{
-        border-bottom: 1px solid white;
-    }
-    img{
-        height: 70px;
-        width: auto;
-    }
+@import "./base/vars";
+@import "./base/listas";
+@import "./componentes/header";
+@import "./componentes/footer";
 
-}   
 /*Index*/
 a{
     text-decoration: none;
@@ -85,7 +32,7 @@ h1{
     justify-content: center;
     align-items: center;
         img{
-        border: 1px solid black;
+        border: 1px solid nth($colores, 4 );
         }
         section{
             display: flex;
@@ -97,63 +44,6 @@ h1{
             align-items: center;
         }
  }
-.animacion{
-    overflow: hidden;
-        @keyframes animacion1 {
-            0%{
-                left: -200px;
-            }
-            100%{
-                left: -2000px;
-            }
-        }
-        
-        .animacionBMXButton{
-            position: absolute;
-            bottom: 0;
-            color: white;
-            background-color:#000000b5;
-            width: 100%;
-            height: 10%;
-            display: flex;
-            justify-content: center;
-            align-items: center;   
-            transition: .3s; 
-        }
-        .animacionBMXButton a{
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: 900;
-            font-size: 50px;
-            width: 100%;
-            text-align: center;
-        
-        }
-        .animacionBMXButton:hover{
-            background-color:#252525;
-        }
-        .animacionBMX{
-            font-size: 50px;
-            position: absolute;
-            left: 0;
-            bottom: 40%;
-            color: rgba(0, 255, 60, 0.333);
-            letter-spacing: 5px;
-            width: 10000px;
-            background-color:#25252500;
-            overflow: hidden;
-            animation-name: animacion1;
-            animation-duration: infinite;
-            animation-duration: 50s;
-            display: flex;
-            align-items: center;
-            padding-top: 17px;
-            font-weight: 900;
-        }
-}
-.headerMobile{
-    display: none;
-}
-
 
 /*Accesorios y Bicicletas*/
 .tienda{
@@ -266,44 +156,9 @@ hr{
     }
 }
 
-/*footer*/
-footer{
-    background-color: #202020;
-    width:100% ;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-        img{
-            height: 80px; 
-        }
-        p{
-            color: white;
-            text-align: right;   
-        }
-        .mapaFooter{
-            display: flex;
-            align-items: center;
-        } 
-        .logoFooter{
-            width: 25%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .logoFooter img{
-            height: 25vh;
+
         
-        }
-        .contactoFooter{
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            justify-content: center;
-            padding-right: 20px;
-        }
-        
-}
+
 /* Lista mobile*/
 @media (max-width:600px) {
 
@@ -311,7 +166,7 @@ footer{
      .headerMobile{
             display: block;
             margin: 65px;
-            background-color:#202020;
+            background-color: $bc-black;
 
          nav div{
             background-color:#202020;
